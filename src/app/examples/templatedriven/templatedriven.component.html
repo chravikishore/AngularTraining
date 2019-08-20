@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form (ngSubmit)="onSubmit()" #tmpl1Form="ngForm" #tmplfrm>
+        <div class="card">
+          <div class="card-header">
+            Template Driven
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" required [(ngModel)]="model.firstName" name="firstName" #firstName="ngModel">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required [(ngModel)]="model.lastName" name="lastName" #lastName="ngModel">
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>     
+
+    </div>
+    <div class="col">
+      <p>
+        Via Form Controls: {{showFormControls(tmpl1Form)}}
+      </p>
+      <p>
+        Form JSON: {{diagnostic}}
+      </p>
+      <p>
+        Form Status: {{ tmplfrm.status }}
+      </p>
+      
+    </div>
+  </div>
+</div>
