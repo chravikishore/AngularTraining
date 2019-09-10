@@ -15,6 +15,11 @@
               <label for="lastName">Last Name</label>
               <input type="text" class="form-control" placeholder="Last Name" formControlName="lastName">
             </div>
+            <div class="form-group">
+              <label for="isActive">Active</label>
+              <input type="checkbox" formControlName="isActive">
+            </div>
+
           </div>
           <div class="card-footer text-muted">
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -25,6 +30,9 @@
     <div class="col">
       <p>
         Form Value: {{ profileForm.value | json }}
+      </p>
+      <p>
+        First Name: {{profileForm.value.firstName}}
       </p>
       <p>
         Form Status: {{ profileForm.status }}

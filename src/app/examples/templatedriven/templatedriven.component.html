@@ -9,11 +9,11 @@
           <div class="card-body">
             <div class="form-group">
               <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" required [(ngModel)]="model.firstName" name="firstName" #firstName="ngModel">
+              <input type="text" class="form-control" id="firstName" required [(ngModel)]="model.firstName" name="firstName" >
             </div>
             <div class="form-group">
               <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" required [(ngModel)]="model.lastName" name="lastName" #lastName="ngModel">
+              <input type="text" class="form-control" id="lastName" required [(ngModel)]="model.lastName" name="lastName">
             </div>
           </div>
           <div class="card-footer text-muted">
@@ -31,7 +31,7 @@
         Form JSON: {{diagnostic}}
       </p>
       <p>
-        Form Status: {{ tmplfrm.status }}
+        Form Status: {{ tmpl1Form.status }}
       </p>
       
     </div>

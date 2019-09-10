@@ -15,6 +15,7 @@ export class ReactiveformsComponent implements OnInit {
     this.profileForm = new FormGroup({
       firstName: new FormControl(''),
       lastName: new FormControl(''),
+      isActive: new FormControl(),
     });
   }
 

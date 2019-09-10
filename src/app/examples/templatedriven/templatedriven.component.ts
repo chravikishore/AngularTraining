@@ -25,6 +25,6 @@ export class TemplatedrivenComponent implements OnInit {
     let fn = form && form.controls['firstName'] && form.controls['firstName'].value;
     let ln = form && form.controls['lastName'] && form.controls['lastName'].value;
     
-    return fn + ln;
+    return fn +' ' + ln;
   }
 }

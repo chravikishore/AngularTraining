@@ -17,7 +17,7 @@ export class ValidationsComponent implements OnInit {
   ngOnInit() {
     this.profileForm = new FormGroup({
       firstName: new FormControl('', [Validators.required,Validators.minLength(4)]),
-      lastName: new FormControl(''),
+      lastName: new FormControl('', [Validators.maxLength(10)]),
     });
   }
   get firstName() { return this.profileForm.get('firstName'); }
